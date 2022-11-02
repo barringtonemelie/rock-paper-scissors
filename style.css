@@ -1,0 +1,21 @@
+* {
+    padding: 0; 
+    margin: 0; 
+    font-family: "Barlow Semi Condensed"; 
+}
+
+.background-wrapper {
+    position: fixed;
+    width: 100vw; 
+    height: 100vh; 
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}

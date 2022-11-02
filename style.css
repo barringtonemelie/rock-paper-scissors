@@ -4,6 +4,53 @@
     font-family: "Barlow Semi Condensed"; 
 }
 
+:root {
+    font-size: 16px;
+}
+
+.scoreboard {
+    color: white; 
+    border: 1px solid white; 
+    border-radius: 10px;
+    width: min(100%, 40rem);
+    height: 8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem; 
+}
+
+.game-title {
+    width: fit-content;
+}
+
+.game-title>h2 {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.score {
+    background-color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: hsl(229, 64%, 46%);
+    width: fit-content; 
+    padding: 1rem 2rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score>h3 {
+    font-weight: 600;
+}
+
+
+.score-num {
+    color: grey; 
+    font-size: 3rem;
+}
+
 .background-wrapper {
     position: fixed;
     width: 100vw; 
@@ -11,9 +58,33 @@
     background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.game-choice {
+    background-image: url(/images/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 1px solid white; 
+    width: min(22rem, 100%); 
+    height: 19rem; 
+    margin-top: 5rem;  
+}
+
+.rules-btn {
+    border: 1px solid white; 
+    color: white; 
+    border-radius: 5px;
+    align-self: end;
+    margin: 2rem; 
+    padding: 0.5rem 1rem; 
 }
 
 .attribution { 
+    color: white; 
     font-size: 11px; text-align: center; 
 }
 .attribution a {

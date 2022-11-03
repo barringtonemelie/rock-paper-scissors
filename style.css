@@ -8,6 +8,25 @@
     font-size: 16px;
 }
 
+html, body {
+    width: 100%; 
+    height: 100%; 
+}
+
+.background-wrapper {
+    position: fixed;
+    width: 100%; 
+    height: 100%;
+    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    overflow: scroll;
+}
+
 .scoreboard {
     color: white; 
     border: 1px solid white; 
@@ -17,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem; 
+    margin: 2rem; 
 }
 
 .game-title {
@@ -51,28 +71,42 @@
     font-size: 3rem;
 }
 
-.background-wrapper {
-    position: fixed;
-    width: 100vw; 
-    height: 100vh; 
-    background: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex; 
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
 .game-choice {
     background-image: url(/images/bg-triangle.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: center;
     border: 1px solid white; 
-    width: min(22rem, 100%); 
-    height: 19rem; 
-    margin-top: 5rem;  
+    width: min(26rem, 100%); 
+    height: 27rem;  
 }
+
+
+.choice {
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 50%; 
+    padding: 2rem; 
+    cursor: pointer;
+}
+
+.paper {
+    border: 12px solid hsl(230, 89%, 65%); 
+    box-shadow: 0 5px hsl(230, 89%, 62%),
+    inset 0 5px rgb(202, 202, 213);  
+}
+
+.scissors {
+    border: 12px solid hsl(40, 84%, 53%);
+    box-shadow: 0 5px hsl(39, 89%, 49%),
+    inset 0 5px rgb(202, 202, 213);  
+}
+
+.rock {
+    border: 12px solid hsl(349, 70%, 56%); 
+    box-shadow: 0 5px hsl(349, 71%, 52%),
+    inset 0 5px rgb(202, 202, 213);  
+}
+
 
 .rules-btn {
     border: 1px solid white; 
@@ -81,6 +115,10 @@
     align-self: end;
     margin: 2rem; 
     padding: 0.5rem 1rem; 
+}
+
+.hidden {
+    display: none; 
 }
 
 .attribution { 

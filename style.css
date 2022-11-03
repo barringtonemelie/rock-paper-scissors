@@ -93,6 +93,11 @@ html, body {
     box-shadow: 0 5px hsl(230, 89%, 62%),
     inset 0 5px rgb(202, 202, 213);  
     position: relative; 
+    transition: transform .2s; 
+}
+
+.paper:hover {
+    transform: scale(1.5);
 }
 
 .scissors {
@@ -101,6 +106,11 @@ html, body {
     inset 0 5px rgb(202, 202, 213);  
     position: relative; 
     right: -33%; 
+    transition: transform .2s; 
+}
+
+.scissors:hover {
+    transform: scale(1.5);
 }
 
 .rock {
@@ -110,8 +120,12 @@ html, body {
     position: relative; 
     bottom: -25%; 
     right: -33%;
+    transition: transform .2s; 
 }
 
+.rock:hover {
+    transform: scale(1.5);
+}
 
 .rules-btn {
     border: 1px solid white; 
@@ -121,6 +135,11 @@ html, body {
     margin: 2rem; 
     padding: 0.5rem 1rem; 
     cursor: pointer;
+    transition: transform .2s; 
+}
+
+.rules-btn:hover {
+    transform: scale(1.5);
 }
 
 .modal-bg {

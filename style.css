@@ -75,7 +75,6 @@ html, body {
     background-image: url(/images/bg-triangle.svg);
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid white; 
     width: min(26rem, 100%); 
     height: 27rem;  
 }
@@ -93,18 +92,24 @@ html, body {
     border: 12px solid hsl(230, 89%, 65%); 
     box-shadow: 0 5px hsl(230, 89%, 62%),
     inset 0 5px rgb(202, 202, 213);  
+    position: relative; 
 }
 
 .scissors {
     border: 12px solid hsl(40, 84%, 53%);
     box-shadow: 0 5px hsl(39, 89%, 49%),
     inset 0 5px rgb(202, 202, 213);  
+    position: relative; 
+    right: -33%; 
 }
 
 .rock {
     border: 12px solid hsl(349, 70%, 56%); 
     box-shadow: 0 5px hsl(349, 71%, 52%),
     inset 0 5px rgb(202, 202, 213);  
+    position: relative; 
+    bottom: -25%; 
+    right: -33%;
 }
 
 
@@ -115,9 +120,47 @@ html, body {
     align-self: end;
     margin: 2rem; 
     padding: 0.5rem 1rem; 
+    cursor: pointer;
 }
 
-.hidden {
+.modal-bg {
+    position: absolute;
+    z-index: 1;
+    width: 100%; 
+    height: 100%; 
+    background-color: hsla(0, 0%, 0%, 0.6);
+}
+
+.modal {
+    position: absolute; 
+    z-index: 2; 
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-rules {
+    z-index: 3;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5rem; 
+}
+
+.img-close {
+    position: absolute;
+    right: 20px;
+    top: 25px; 
+    z-index: 4; 
+    cursor: pointer;
+}
+
+.hidden-bg {
+    display: none; 
+}
+
+.hidden-modal {
     display: none; 
 }
 
